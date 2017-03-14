@@ -21,10 +21,12 @@ var firstPike = {
     }
     this.salesArr.push(total);
   },
-  createListItems: function(){ // create the li elements and push them to a specified ul elementsin html //
+  createListItems: function(){ // create the li elements and push them to a specified ul elementsin html /
+    var newHeading = document.createElement('h2');
+    body.appendChild(newHeading);
     var firstUl = document.creatElement('ul');// create the UL that will contain the followingf Li tags
     for (var i = 0; i < storeHours.lenght - 1; i++) {//for every hour i want to put the cookies sold for that day, as well as the total for the day
-      var newEl = document.createElement('li'); // creates a list item
+      var newListItem = document.createElement('li'); // creates a list item
       newEl.innerText = storeHours[ii] + ': ' + this.salesArr[i] + ' cookies'; //Populate the list items with information about cookies sold each hour
       firstUl.appendChild(newEl);//append the new list item to the ul tag we created
     }
