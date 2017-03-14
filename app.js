@@ -7,14 +7,14 @@ var pike = {
   randomCust: function() {
     return Math.floor((Math.random * (this.maxCust - this.minCust) + 1) + this.minCust);
   },
-  totalSales: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm' ],
+  totalSales: ['6am ' + this.randomCust() * this.avgSale, '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm' ],
   hourlyNum: function() {
     this.totalSales.length = 15;
     for(var i = 0; i < 15; i++){
-      this.totalSales[i] = this.randomCust() * this.avgSale;
+      this.totalSales = this.randomCust() * this.avgSale;
       i++;
       return pike.hourlyNum;
     }
   }
 };
-console.log(pike.totalSales[1]);
+console.log(pike.totalSales);
