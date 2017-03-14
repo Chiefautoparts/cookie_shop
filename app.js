@@ -13,7 +13,8 @@ var pike = {
     for(var i = 0; i < 15; i++){
       this.totalSales[i] = this.randomCust() * this.avgSale;
       i++;
+      return pike.hourlyNum;
     }
   }
 };
-pike.totalSales[12];
+console.log(pike.totalSales[1]);
