@@ -26,7 +26,7 @@ var firstPike = {
     var newHeading = document.createElement('h2');
     body.appendChild(newHeading);
     newHeading.innerText = this.name;
-    var firstUl = document.creatElement('ul');
+    var firstUl = document.createElement('ul');
     for (var i = 0; i < storeHours.lenght; i++) {
       var newLi = document.createElement('li');
       newLi.innerText = storeHours[i] + ': ' + this.salesArr[i] + ' cookies';
