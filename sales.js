@@ -50,7 +50,7 @@ var firstAndPike = {
     var ul1 = document.createElement('li');
     var newText = document.createTextNode('Total ' + this.dailyTotals() + 'cookies');
     ul1.appendChild(newText);
-    var position = document.getElementById('1')[0];
+    var position = document.getElementById('1');
     position.appendChild(ul1);
   }
 };
