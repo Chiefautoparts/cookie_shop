@@ -23,3 +23,5 @@ var firstPike = {
   },
   createListItems: function(){} //create the li elements and push them to a specified ul elements in html.
 };
+
+var body = document.getElementsByTagName('body')[0];
