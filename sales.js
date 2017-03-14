@@ -13,18 +13,45 @@ var firstAndPike = {
   },
   hourlySales: function() {
     var cookiesPerHour = [];
-    for (var i = 0; i < hours.length; i++) {
+    for (var i = 0; i < hoursOpen.length; i++) {
       cookiesPerHour.push(this.salesPerHour());
     }
     return cookiesPerHour;
   },
-  dailyTotals: functions() { var total = 0;
-    for (var i =0; i < hoursOpen.length; i++) {
+  dailyTotals: function() { var total = 0;
+    for (var i = 0; i < hoursOpen.length; i++) {
       total += this.hourlySales()[i];
     }
     return total;
   },
   hoursOfOpperation: function() {
-    var hoursAvailble
+    var hoursAvailble = [];
+    for (var i = 0;
+   i < hoursOpen.length; i++) {
+      hoursAvailble.push(hoursOpen[i]);
+    }
+    return hoursAvailble;
+  },
+  pushToNewArray: function() {
+    var summaryTotals = [];
+    for (var i = 0; i < hoursOpen.length; i++) {
+      summaryTotals.push(this.hoursOfOpperation()[i] + ': ' + this.hourlySales()[i] + ' cookies');
+    }
+    return summaryTotals;
+  },
+  createNewLists: function() {
+    for (var i = 0; i < hoursOpen.length; i++) {
+      var ul1 =  document.createElement('li');
+      var newText = document.createTextNode(this.pushToNewArray()[i]);
+      ul1.appendChild(newText);
+      var position = document.getElementById('1');
+      position.appendChild(ul1);
+    }
+    var ul1 = document.createElement('li');
+    var newText = document.createTextNode('Total ' + this.dailyTotals() + 'cookies');
+    ul1.appendChild(newText);
+    var position = document.getElementById('1')[0];
+    position.appendChild(ul1);
   }
-}
+};
+firstAndPike.createNewLists();
