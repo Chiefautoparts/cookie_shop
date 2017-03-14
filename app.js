@@ -1,14 +1,15 @@
 'use strict';
 
-//correct way to write the script//
+var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'total'];
 
-var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
+var body = document.getElementsByTagName('body')[0];
 
 var firstPike = {
   minCust: 23,
   maxCust: 65,
   avgCookies: 6.3,
   salesArr: [],
+  name: 'First and Pike',
   randCust: function () {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
   },
@@ -21,15 +22,18 @@ var firstPike = {
     }
     this.salesArr.push(total);
   },
-  createListItems: function(){ // create the li elements and push them to a specified ul elementsin html /
+  createListItems: function(){
     var newHeading = document.createElement('h2');
     body.appendChild(newHeading);
-    var firstUl = document.creatElement('ul');// create the UL that will contain the followingf Li tags
-    for (var i = 0; i < storeHours.lenght - 1; i++) {//for every hour i want to put the cookies sold for that day, as well as the total for the day
-      var newListItem = document.createElement('li'); // creates a list item
-      newEl.innerText = storeHours[ii] + ': ' + this.salesArr[i] + ' cookies'; //Populate the list items with information about cookies sold each hour
-      firstUl.appendChild(newEl);//append the new list item to the ul tag we created
+    newHeading.innerText = this.name;
+    var firstUl = document.creatElement('ul');
+    for (var i = 0; i < storeHours.lenght; i++) {
+      var newLi = document.createElement('li');
+      newLi.innerText = storeHours[i] + ': ' + this.salesArr[i] + ' cookies';
+      firstUl.appendChild(newLi);
     }
     body.appendChild(firstUl);
   }
 };
+firstPike.cookieSold();
+firstPike.createListItems();
