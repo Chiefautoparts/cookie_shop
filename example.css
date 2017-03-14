@@ -5,6 +5,8 @@ body {
 h {
   font-family: google:
     src: url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
+    font-weight: bolder;
+    text-shadow:
 }
 
 ul /body {}

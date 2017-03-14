@@ -18,7 +18,8 @@ var firstAndPike = {
     }
     return cookiesPerHour;
   },
-  dailyTotals: function() { var total = 0;
+  dailyTotals: function() {
+    var total = 0;
     for (var i = 0; i < hoursOpen.length; i++) {
       total += this.hourlySales()[i];
     }
