@@ -1,18 +1,30 @@
-var pike = {
+'use strict';
+var hoursOpen = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+
+var firstAndPike = {
   minCust: 23,
-  MaxCust: 65,
-  avgNum: 65.3,
-  hourlyAvg: function() {
-    return Math.floor((Math.random * (this.maxCust - this.minCust) + 1) * 100 + this.minCust);
+  maxCust: 65,
+  avgCookies: 6.3,
+  custPerHour: function() {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
   },
-  custHourly: ['6am ' + hourlyAvg(), '7am ' + hourlyAvg(), '8am ' + hourlyAvg(), '9am ' + hourlyAvg(), '10am ' + hourlyAvg(), '11am ' + hourlyAvg(), '12am ' + hourlyAvg(), '1pm ' + hourlyAvg(), '2pm ' + hourlyAvg(), '3pm ' + hourlyAvg(), '4pm ' + hourlyAvg(), '5pm ' + hourlyAvg(), '6pm ' + hourlyAvg(), '7pm ' + hourlyAvg(), '8pm ' + hourlyAvg()],
-  total: cookieAvg(),
-  cookieAvg: function() {
-    this.custHourly.length = 15;
-    for (var i = 0; i < 15; i++) {
-      this.custHourly = this.hourlyAvg() * this.avgNum,
-                total++;
-    };
+  salesPerHour: function() {
+    Math.ceil(this.custPerHour() * this.avgCookies);
+  },
+  hourlySales: function() {
+    var cookiesPerHour = [];
+    for (var i = 0; i < hours.length; i++) {
+      cookiesPerHour.push(this.salesPerHour());
+    }
+    return cookiesPerHour;
+  },
+  dailyTotals: functions() { var total = 0;
+    for (var i =0; i < hoursOpen.length; i++) {
+      total += this.hourlySales()[i];
+    }
+    return total;
+  },
+  hoursOfOpperation: function() {
+    var hoursAvailble
   }
-};
-pike.hourlyAvg();
+}

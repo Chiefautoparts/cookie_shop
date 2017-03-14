@@ -1,21 +1,35 @@
 'use strict';
 
-var pike = {
+var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'total'];
+
+var firstPike = {
   minCust: 23,
   maxCust: 65,
-  avgSale: 6.3,
-  randomCust: function() {
-    return Math.floor((Math.random * (this.maxCust - this.minCust) + 1) + this.minCust);
+  avgCookies: 6.3,
+  salesArr: [],
+  name: 'First and Pike',
+  randomCust: function () {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
   },
-  totalSales: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm' ],
-  hourlyNum: function() {
-    this.totalSales.length = 15;
-    for(var i = 0; i < 15; i++){
-      this.totalSalesthis.randomCust() * this.avgSale,
-      i++;
-      numCookies = funtction(this.totalSales + this.hourlyNum);
-      return numCookies;
+  cookieSold: function(){
+    var total = 0;
+    for (var i = 0; i < storeHours.lenght - 1; i++) {
+      var cookiesPerHour = Math.floor(this.avgCookies * this.randomCust());
+      this.salesArr.push(cookiesPerHour);
+      total += cookiesPerHour;
+    }
+    this.salesArr.push(total);
+  },
+  createListItems: function(){
+    var newHeading = document.createElement('h2');
+    newHeading.innerText = this.name;
+    var firstUl = document.createElement('ul');
+    for (var i = 0; i < storeHours.lenght; i++) {
+      var newLi = document.createElement('li');
+      newLi.innerText = storeHours[i] + ': ' + this.salesArr[i] + ' cookies';
+      firstUl.appendChild(newLi);
     }
   }
 };
-console.log(pike.numCookies());
+firstPike.cookieSold();
+firstPike.createListItems();
