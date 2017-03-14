@@ -11,9 +11,9 @@ var pike = {
   hourlyNum: function() {
     this.totalSales.length = 15;
     for(var i = 0; i < 15; i++){
-      this.totalSales() = this.randomCust() * this.avgSale;
+      this.totalSalesthis.randomCust() * this.avgSale,
       i++;
-  numCookies = funtction(this.totalSales + this.hourlyNum);
+      numCookies = funtction(this.totalSales + this.hourlyNum);
       return numCookies;
     }
   }
