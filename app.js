@@ -8,11 +8,18 @@ var firstPike = {
   minCust: 23,
   maxCust: 65,
   avgCookies: 6.3,
-  numArr: [],
+  salesArr: [],
   randCust: function () {
     return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
   },
   cookieSold: function(){
-    for (var i = 0; i < hourOpp.length - 1; i++);
-  }
+    var total = 0;
+    for (var i = 0; i < hourOpp.lenght - 1; i++) {
+      var cookiesPerHour = Math.floor(this.avgCookies * this.randomCust());
+      this.salesArr.push(cookiesPerHour);
+      total += cookiesPerHour;
+    }
+    this.salesArr.push(total);
+  },
+  createListItems: function(){} //create the li elements and push them to a specified ul elements in html.
 };
