@@ -7,8 +7,7 @@ var pike = {
   randomCust: function() {
     return Math.floor((Math.random * (this.maxCust - this.minCust) + 1) + this.minCust);
   },
-  totalSales: [],
-  //hours: [ {'6am ' + randomCust()}, {'7am ' + randomCust()}, {'8am ' + randomCust()}, {'9am ' + randomCust()}, {'10am ' + randomCust()}, {'11am ' + randomCust()}, {'12pm ' + randomCust()}, {'1pm ' + randomCust()}, {'2pm ' + randomCust()}, {'3pm ' + randomCust()}, {'4pm ' + randomCust()}, {'5pm ' + randomCust()}, {'6pm ' + randomCust()}, {'7pm ' + randomCust()}, {'8pm ' + randomCust()} ]
+  totalSales: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm' ],
   hourlyNum: function() {
     this.totalSales.length = 15;
     for(var i = 0; i < 15; i++){
