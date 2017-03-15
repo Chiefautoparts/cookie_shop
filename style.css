@@ -1,5 +1,45 @@
 html {
-    background-color: #DEA677;
-    color: #47535E;
+    background-color: #324152;
+    color: white;
     font-family: Arial, Verdana, sans-serif;
+}
+h1 {
+  font-weight: bold;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: -6px -6px 3px black;
+  color: #C1836A;
+}
+img.pic1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about h2 {
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-size: 25px;
+  background-color: #C1836A;
+  color: #47535E;
+  margin: 20px;
+  padding: 3px;
+  border-style: outset;
+  border-color: silver;
+  border-width: 10px;
+}
+.locations {
+  width: 500px;
+  padding: auto;
+  font-size: 25px;
+  background-color: #C1836A;
+  align-items: center;
+  margin: auto;
+  border-style: outset;
+  border-color: black;
+  border-width: 3px;
+  box-shadow: -7px -7px 5px 0 black;
+  color: #47535E;
+  font-weight: bold;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
 }
