@@ -189,7 +189,7 @@ var capHill = {
   },
   dailyTotals: function() {
     var total = 0;
-    for (var i = 0; i < houtd.length; i++) {
+    for (var i = 0; i < hours.length; i++) {
       total += this.hourlySales()[i];
     }
     return total;
@@ -256,10 +256,10 @@ var alki = {
    i < hours.length; i++) {
       hoursAvailble.push(hours[i]);
     }
-    return hoursAvailblehours;
+    return hoursAvailble;
   },
 
-  pushToNewArr: function() {
+  pushToNewArray: function() {
     var summaryTotals = [];
     for (var i = 0; i < hours.length; i++) {
       summaryTotals.push(this.hoursOfOpperation()[i] + ': ' + this.hourlySales()[i] + ' cookies');
