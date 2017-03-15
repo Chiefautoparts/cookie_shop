@@ -1,11 +1,9 @@
-body {
-  background-color: salmon;
-  text-color: gray;
-  test-align: center;
+html {
+  background-color: #DEA677;
+  color: #47535E;
+  font-family: Arial, Verdana, sans-serif;
 }
-
-h1 {
-  font-size: 55px;
-  text-shadow: 15px 20px,
-  font-
+#salmonGif {
+  image-resolution: snap;
+  align-self: auto;
 }

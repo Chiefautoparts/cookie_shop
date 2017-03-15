@@ -45,13 +45,13 @@ var firstAndPike = {
       var ul1 =  document.createElement('li');
       var newText = document.createTextNode(this.pushToNewArray()[i]);
       ul1.appendChild(newText);
-      var position = document.getElementById('1');
+      var position = document.getElementsByTagName('1');
       position.appendChild(ul1);
     }
     var ul1 = document.createElement('li');
     var newText = document.createTextNode('Total ' + this.dailyTotals() + 'cookies');
     ul1.appendChild(newText);
-    var position = document.getElementById('1');
+    var position = document.getElementsByTagName('1');
     position.appendChild(ul1);
   }
 };
@@ -100,17 +100,17 @@ var seaTac = {
   },
   createNewLists: function() {
     for (var i = 0; i < hoursOpen.length; i++) {
-      var ul1 =  document.createElement('li');
+      var ul2 =  document.createElement('li');
       var newText = document.createTextNode(this.pushToNewArray()[i]);
-      ul1.appendChild(newText);
-      var position = document.getElementById('2');
-      position.appendChild(ul1);
+      ul2.appendChild(newText);
+      var position = document.getElementsByTagName('2');
+      position.appendChild(ul2);
     }
-    var ul1 = document.createElement('li');
+    var ul2 = document.createElement('li');
     var newText = document.createTextNode('Total ' + this.dailyTotals() + 'cookies');
-    ul1.appendChild(newText);
-    var position = document.getElementById('2');
-    position.appendChild(ul1);
+    ul2.appendChild(newText);
+    var position = document.getElementsByTagName('2');
+    position.appendChild(ul2);
   }
 };
 seaTac.createNewLists();
@@ -158,17 +158,17 @@ var seaCent = {
   },
   createNewLists: function() {
     for (var i = 0; i < hoursOpen.length; i++) {
-      var ul1 =  document.createElement('li');
+      var ul3 =  document.createElement('li');
       var newText = document.createTextNode(this.pushToNewArray()[i]);
-      ul1.appendChild(newText);
-      var position = document.getElementById('3');
-      position.appendChild(ul1);
+      ul3.appendChild(newText);
+      var position = document.getElementsByTagName('3');
+      position.appendChild(ul3);
     }
-    var ul1 = document.createElement('li');
+    var ul3 = document.createElement('li');
     var newText = document.createTextNode('Total ' + this.dailyTotals() + 'cookies');
-    ul1.appendChild(newText);
-    var position = document.getElementById('3');
-    position.appendChild(ul1);
+    ul3.appendChild(newText);
+    var position = document.getElementsByTagName('3');
+    position.appendChild(ul3);
   }
 };
 seaCent.createNewLists();
@@ -216,17 +216,17 @@ var capHill = {
   },
   createNewLists: function() {
     for (var i = 0; i < hoursOpen.length; i++) {
-      var ul1 =  document.createElement('li');
+      var ul4 =  document.createElement('li');
       var newText = document.createTextNode(this.pushToNewArray()[i]);
-      ul1.appendChild(newText);
-      var position = document.getElementById('4');
-      position.appendChild(ul1);
+      ul4.appendChild(newText);
+      var position = document.getElementsByTagName('');
+      position.appendChild(ul4);
     }
-    var ul1 = document.createElement('li');
+    var ul4 = document.createElement('li');
     var newText = document.createTextNode('Total ' + this.dailyTotals() + 'cookies');
     ul1.appendChild(newText);
-    var position = document.getElementById('4');
-    position.appendChild(ul1);
+    var position = document.getElementsByTagName('4');
+    position.appendChild(ul4);
   }
 };
 capHill.createNewLists();
@@ -274,17 +274,17 @@ var alki = {
   },
   createNewLists: function() {
     for (var i = 0; i < hoursOpen.length; i++) {
-      var ul1 =  document.createElement('li');
+      var ul5 =  document.createElement('li');
       var newText = document.createTextNode(this.pushToNewArray()[i]);
-      ul1.appendChild(newText);
-      var position = document.getElementById('5');
-      position.appendChild(ul1);
+      ul5.appendChild(newText);
+      var position = document.getElementsByTagName('5');
+      position.appendChild(ul5);
     }
-    var ul1 = document.createElement('li');
+    var ul5 = document.createElement('li');
     var newText = document.createTextNode('Total ' + this.dailyTotals() + 'cookies');
-    ul1.appendChild(newText);
-    var position = document.getElementById('5');
-    position.appendChild(ul1);
+    ul5.appendChild(newText);
+    var position = document.getElementsByTagName('5');
+    position.appendChild(ul5);
   }
 };
 alki.createNewLists();
