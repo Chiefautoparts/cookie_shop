@@ -1,6 +1,10 @@
 body {
-    background-color: #324152;
+    background-image: url("https://g3.img-dpreview.com/14D9C9B825824016AD0B7395FDBE2B0C.jpg");
     font-family: Arial, Verdana, sans-serif;
+}
+img.salmon1 {
+  display: block;
+  margin:auto;
 }
 h1 {
   font-weight: bold;
@@ -11,11 +15,11 @@ h1 {
 }
 
 table {
-  width: 80%;
+  width: 100%;
   margin: auto;
-  margin-top: 5px;
+  margin-top: 10px;
   border-style: ridge;
-  border-width: 4px;
+  border-width: 8px;
   border-color: gray;
   background-color: #C1836A;
   color: #324152;
