@@ -1,0 +1,12 @@
+html {
+    background-color: #324152;
+    color: white;
+    font-family: Arial, Verdana, sans-serif;
+}
+h1 {
+  font-weight: bold;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: -6px -6px 3px black;
+  color: #C1836A;
+}
