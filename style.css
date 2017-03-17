@@ -1,0 +1,36 @@
+body {
+    background-image: url("https://g3.img-dpreview.com/14D9C9B825824016AD0B7395FDBE2B0C.jpg");
+    font-family: Arial, Verdana, sans-serif;
+}
+img.salmon1 {
+  display: block;
+  margin:auto;
+}
+h1 {
+  font-weight: bold;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: -6px -6px 3px black;
+  color: #C1836A;
+}
+
+table {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  border-style: ridge;
+  border-width: 8px;
+  border-color: gray;
+  background-color: #C1836A;
+  color: #324152;
+}
+
+th {
+  font-size: 18px;
+}
+
+td {
+  border: 2px ridge gray;
+  text-align: center;
+  font-size: 2em;
+}
