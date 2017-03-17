@@ -30,36 +30,36 @@ function CookieShop(name, minCust, maxCust, avgHrSale) {
 
   this.generateTableRow = function() {
     this.dailyNum();
-    var table = document.getElementsByTagName('table')[0];
-    var tRow = document.createElement('tr');
+    var newTable = document.getElementsByTagName('table')[0];
+    var tableRow = document.createElement('tr');
     var tableBody = document.getElementById('table-body');
-    tableBody.appendChild(tRow);
-    var nameTD = document.createElement('th');
-    nameTD.innerText = this.name;
-    tRow.appendChild(nameTD);
+    tableBody.appendChild(tableRow);
+    var tdName = document.createElement('th');
+    tdName.innerText = this.name;
+    tableRow.appendChild(tdName);
     for (var i = 0; i < storeHrs.length - 1; i++) {
-      var newTD = document.createElement('td');
-      newTD.innerText = this.salesArr[i];
-      tRow.appendChild(newTD);
+      var tdNew = document.createElement('td');
+      tdNew.innerText = this.salesArr[i];
+      tableRow.appendChild(tdNew);
     }
   };
   allStores.push(this);
 }
 
 function createTable() {
-  var table = document.createElement('table');
-  body.appendChild(table);
-  var tableHead = document.createElement('thead');
-  table.appendChild(tableHead);
-  var tRow = document.createElement('tr');
-  tableHead.appendChild(tRow);
+  var tableNew = document.createElement('table');
+  body.appendChild(tableNew);
+  var tableHeading = document.createElement('thead');
+  tableNew.appendChild(tableHeading);
+  var newTRow = document.createElement('tr');
+  tableHeading.appendChild(newTRow);
   for (var i = 0; i < storeHrs.length; i++) {
-    var th = document.createElement('th');
-    th.innerText = storeHrs[i];
-    tRow.appendChild(th);
+    var newTH = document.createElement('th');
+    newTH.innerText = storeHrs[i];
+    newTRow.appendChild(newTH);
   }
   var tableBody = document.createElement('tbody');
-  table.appendChild(tableBody);
+  tableNew.appendChild(tableBody);
   tableBody.id = 'table-body';
 };
 createTable();
