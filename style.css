@@ -77,8 +77,18 @@ main {
   display: block;
   font-family: Verdana, sans-serif;
   }
+footer {
+  font-family: monospace;
+}#merch-div h3 {
+  background-image:
+}
+
 
 #merch-div {
   display: inline-grid;
-  outline-offset: inherit; 
+  outline-offset: inherit;
+border: 10px 20px;
+border-style: ridge;
+border-color: grey;
+background-color: #324152;
 }
