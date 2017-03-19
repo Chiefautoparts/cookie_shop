@@ -72,3 +72,13 @@ td {
   text-align: center;
   font-size: 2em;
 }
+
+main {
+  display: block;
+  font-family: Verdana, sans-serif;
+  }
+
+#merch-div {
+  display: inline-grid;
+  outline-offset: inherit; 
+}
