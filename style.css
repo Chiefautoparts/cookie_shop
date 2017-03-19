@@ -24,7 +24,7 @@ h1 p {
 }
 .navBar {
   height: 40px;
-  width: 410px;
+  width: 500px;
   margin: 25px;
   background-color: #324152;
   outline-style: ridge;
@@ -79,16 +79,43 @@ main {
   }
 footer {
   font-family: monospace;
-}#merch-div h3 {
-  background-image:
+  align-items: center;
 }
 
+#about-us h3 {
+background-color: #324152;
+color: #C1836A;
+width: 500px;
+border: ridge medium grey;
+text-align: center;
+font-size: 20px;
+}
+#aobut-us p {
+  background-color:
+}
 
-#merch-div {
+#merch-div h3 {
+  background-color: #324152;
+  color: #C1836A;
+  text-align: center;
+  border: ridge medium grey;
+  font-size: 20px;
+}
+
+#mercPics {
   display: inline-grid;
   outline-offset: inherit;
-border: 10px 20px;
-border-style: ridge;
-border-color: grey;
-background-color: #324152;
+  border: 10px 20px;
+  border-style: ridge;
+  border-color: grey;
+  background-color: #324152;
+}
+div h2 {
+  background-color: black;
+  width: 578px;
+  color:#1AFF00;
+  border-style: ridge;
+  border-color: grey;
+  border-width: medium;
+  text-align: center;
 }
