@@ -90,8 +90,11 @@ border: ridge medium grey;
 text-align: center;
 font-size: 20px;
 }
-#aobut-us p {
-  background-color:
+
+#about-us p {
+  background-color: #C1836A;
+  color: #324152;
+  border: ridge medium gray;
 }
 
 #merch-div h3 {
@@ -101,14 +104,7 @@ font-size: 20px;
   border: ridge medium grey;
   font-size: 20px;
 }
-
 #mercPics {
-  display: inline-grid;
-  outline-offset: inherit;
-  border: 10px 20px;
-  border-style: ridge;
-  border-color: grey;
-  background-color: #324152;
 }
 div h2 {
   background-color: black;
