@@ -42,9 +42,12 @@ function CookieShop(name, minCust, maxCust, avgHrSale) {
       tdNew.innerText = this.salesArr[i];
       tableRow.appendChild(tdNew);
     }
+    var newTd = document.createElement('td');
+    newTd.innnerText = this.total;
+    tableRow.appendChild(tdName);
   };
   allStores.push(this);
-}
+};
 
 function createTable() {
   var tableNew = document.createElement('table');
@@ -58,20 +61,23 @@ function createTable() {
     newTH.innerText = storeHrs[i];
     newTRow.appendChild(newTH);
   }
+  var newTH = document.createElement('th');
+  newTH.innerText = storeHrs[i];
+  newTRow.appendChild(newTH);
   var tableBody = document.createElement('tbody');
   tableNew.appendChild(tableBody);
   tableBody.id = 'table-body';
-};
-var completeTotals = 0;
-for (var i = 0; i < allStores.length; i++) {
-  completeTotals += allStores[i].total;
-}
-var completeTotalsRow = document.createElement('td');
-completeTotalsRow.innerText = completeTotals;
-tableRow.appendChild(completeTotalsRow);
+  var completeTotalsRow = document.createElement('td');
+  completeTotalsRow.innerText = completeTotals;
+  newTRow.appendChild(completeTotalsRow);
 
-for (var i = 0; i < allStores.length; i++) {
-  allStores[i].generateTableRow();
+  for (var i = 0; i < allStores.length; i++) {
+    allStores[i].generateTableRow();
+  };
+  var completeTotals = 0;
+  for (var i = 0; i < allStores.length; i++) {
+    completeTotals += allStores[i].total;
+  }
 }
 createTable();
 
