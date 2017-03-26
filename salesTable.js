@@ -68,6 +68,24 @@ for (var i = 0; i < allStores.length; i++) {
   allStores[i].generateTableRow();
 }
 
+var elStoreForms = document.getElementById('storeForm');
+
+function newStore(event) {
+  event.preventDefault();
+  var storeForm = event.target;
+  var storeLocation  = event.target.newStore.value;
+  var minCustomer = Math.round(event.target.minimumCust.value);
+  var maxCustomer = Math.round(event.target.maximumCust.value);
+  var averageCookies = event.target.avgCookie.value;
+  if (minimumCust > maxCustomer){
+    alert('Double check the amounts minimum cannot be bigger than maximum');
+  } else {
+    var formData = new CookieShop(storeLocation, minCustomer, maxCustomer,averageCookies);
+    formData.generateTableRow();
+  }
+}
+
+elStoreForms.addEventListener('submit', submitButton);
 //firstAndPike.generateTableRow();
 //SeaTac.generateTableRow();
 //SeaCent.generateTableRow();
