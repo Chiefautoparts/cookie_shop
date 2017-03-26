@@ -1,0 +1,90 @@
+body {
+    background-image: url("https://g3.img-dpreview.com/14D9C9B825824016AD0B7395FDBE2B0C.jpg");
+    font-family: Arial, Verdana, sans-serif;
+}
+img.chinook {
+  display: block;
+  margin: auto;
+}
+.navBar {
+  height: 40px;
+  width: 500px;
+  margin: 25px;
+  background-color: #324152;
+  outline-style: ridge;
+  outline-color: gray;
+  outline-width: 5px;
+  text-align: center;
+}
+
+  .navBar ul li {
+  list-style: none;
+}
+
+.navBar ul li a {
+text-decoration: none;
+font-size: 20px;
+float: left;
+font-weight: bolder;
+display: inline-block;
+padding: 10px 15px;
+color: #C1836A;
+}
+.navBar ul li a:hover {
+  display: block;
+  background-color: black;
+  text-decoration: underline;
+}
+main .about-us {
+  margin: auto;
+  border-style: ridge;
+  border-width: medium;
+  border-color: gray;
+  background-color: #C1836A;
+  color: #324152;
+}
+main .about-us #fishy-fish {
+  float: right;
+}
+main h3 {
+  background-color: #324152;
+  color: #C1836A;
+  border-style: groove;
+  border-width: medium;
+  border-color: gray;
+  text-align: center;
+  }
+#cutter-text {
+  background-color: #324152;
+  color: #C1836A;
+  width: 30%;
+  border: ridge medium grey;
+  text-align: center;
+  font-size: 20px;
+}
+#shirt-text{
+  background-color: #324152;
+  color: #C1836A;
+  width: 30%;
+  border: ridge medium grey;
+  text-align: center;
+  font-size: 20px;
+}
+h2 {
+  font-family: 'Fruktur', cursive;
+  background-color: black;
+  width: 578px;
+  color:#1AFF00;
+  border-style: ridge;
+  border-color: grey;
+  border-width: medium;
+  text-align: center;
+}
+#family-text {
+  background-color: #324152;
+  color: #C1836A;
+  width: 30%;
+  border: ridge medium grey;
+  text-align: center;
+  font-size: 20px;
+}

@@ -85,7 +85,7 @@ function newStore(event) {
   }
 }
 
-elStoreForms.addEventListener('submit', submitButton);
+elStoreForms.addEventListener('submit', newStore);
 //firstAndPike.generateTableRow();
 //SeaTac.generateTableRow();
 //SeaCent.generateTableRow();

@@ -51,7 +51,12 @@ color: #C1836A;
   background-color: black;
   text-decoration: underline;
 }
-
+fieldset {
+  background-color: #C1836A;
+  color: #324152;
+  border: ridge medium gray;
+  font-weight: bolder;
+}
 table {
   width: 100%;
   margin: auto;
@@ -107,6 +112,7 @@ font-size: 20px;
 #mercPics {
 }
 div h2 {
+  font-family: 'Fruktur', cursive;
   background-color: black;
   width: 578px;
   color:#1AFF00;
